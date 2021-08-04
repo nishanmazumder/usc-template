@@ -32,7 +32,7 @@ a:hover{
 	text-decoration:none;
 }
 
-img{}
+/* img{} */
 
 .img-size-1{
 	width: 200px;
@@ -145,15 +145,18 @@ header{
 }
 .nm_usc_form{
 	background: #F9F9FA;
-	padding: 10px 40px;
-}
+	padding: 10px 40px 0px;
+} 
 
 .nm_usc_form_area h3{
-	padding: 15px;
+	padding: 12px 0px 6px;
+}
+.nm_usc_form h3{
+	padding: 0px 0px 6px;
 }
 
 .nm_usc_form input{
-	height: 45px;
+	line-height: 25px;
     font-size: 12px;
     border-radius: 0px;
     border-color: #BABABA;
@@ -163,6 +166,11 @@ header{
 	margin-bottom: -5px !important;
 }
 
+.form-control:focus{
+	border-color: #B30A3A;
+	box-shadow: 0 0 0 0.2rem rgb(255 0 82 / 25%);
+}
+
 .nm_usc_form  .nm_font_mont{
 	font-size: 10px;
 }
@@ -170,6 +178,19 @@ header{
 .nm_usc_form  .form-check-input{
 	height: 20px;
 }
+
+.custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: #7B1FA2;
+  }
+  
+  .custom-control-input:checked~.custom-control-label.red::before {
+	background-color: red;
+  }
+  
+  .custom-control-input:checked~.custom-control-label.green::before {
+	background-color: green;
+  }
 
 .nm_usc_form  .form-check {
     padding-left: 0px;
@@ -201,7 +222,7 @@ header{
 	position: relative;
 	display: block;
 	margin: 0px auto;
-	top: 40px;
+	top: 30px;
 }
 
 .nm_usc_headline img{
@@ -221,6 +242,61 @@ header{
 	cursor: pointer;
 }
 
+.nm-overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #C90D2C;
+	overflow: hidden;
+	transition: 0.5s;
+  }
+  
+  .nm-overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .nm-overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+	font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .nm-overlay a:hover, .nm-overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .nm-overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+
+  .nm-overlay a:hover{
+	  transform: scale(1.2);
+  }
+  
+  @media screen and (max-height: 450px) {
+	.nm-overlay {overflow-y: auto;}
+	.nm-overlay a {font-size: 20px}
+	.nm-overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
+
 
 /*********************
 	Content Section
@@ -234,16 +310,16 @@ header{
 	background-position: center;
 }
 
-.nm_usc_youtube{
+/* .nm_usc_youtube{
 	
-}
+} */
 
-.nm_usc_youtube  img{
+.nm_usc_youtube img{
 	width: 600px;
     position: relative;
     display: block;
     margin: 120px 0px;
-    z-index: 100;
+    z-index: 10;
 }
 
 .nm_usc_apply{
@@ -406,6 +482,10 @@ header{
 
 /*Third section*/
 
+.section_third{
+	padding-bottom: 60px;
+}
+
 .nm_app_fee{
 	padding-right: 50px;
     text-align: justify;
@@ -426,12 +506,13 @@ header{
 .nm_app_contact{
 	background: #131313;
 	padding: 50px;
+	text-align: center;
 }
 
 .nm_app_contact h3{
 	font-size: 28px;
 	font-weight: 700;
-	float: left;
+	/* float: left; */
 	margin: 15px;
 	color: #fff;
 }
@@ -482,10 +563,10 @@ header{
 		padding-right: 20px;
 	}
 	.nm_usc_reson {
-		padding: 30px 115px 30px 30px;
+		padding: 20px;
 		top: -60px;
 		left: -115px;
-		width: 700px;
+		width: 124%;
 	}
 }
 
@@ -497,8 +578,11 @@ header{
 		padding-bottom: 80px;
 	}
 	.nm_usc_headline {
-		padding: 50px 10px 50px 10px;
+		padding: auto;
 	}
+	/* .nm_usc_form_sec {
+		padding-right: 50px;
+	} */
 	.nm_usc_headline img{
 		display: none;
 	}
@@ -531,12 +615,14 @@ header{
 	}
 	.nm_dead_des {
 		padding: 30px 0px 20px 30px;
+		margin-left: 20px;
 	}
 	.nm_dead_data td {
 		padding: 5px;
 	}
 	.nm_dead_data {
 		padding: 30px 0px 20px 30px;
+		margin-left: 20px;
 	}
 	.nm_app_contact h3 {
 		font-size: 50px;
@@ -555,11 +641,17 @@ header{
 
 @media only screen and (max-width:650px){
 	
+	.nm_header_h1{
+		font-size: 36px;
+	}
 	.nm_paragraph {
 		font-size: 20px;
 		line-height: 24px;
 	}
-	
+	.nm_letter_spacing{
+		font-size: 22px;
+		letter-spacing: 4px;
+	}
 	.nm_usc_apply button {
 		left: 0px;
 		padding-left: 20px;
@@ -570,6 +662,9 @@ header{
 	}
 	.nm_usc_spc_ten {
 		font-size: 120px;
+	}
+	.nm_usc_reson{
+		width: 99%;
 	}
 	.nm_usc_reason_area h1 {
 		font-size: 33px;
@@ -622,7 +717,10 @@ header{
 	}
 	.nm_usc_form_sec {
 		padding: 0px;
-		margin-top: 70px;
+		margin-top: 50px;
+	}
+	.nm_usc_main_form_btn {
+		right: 15px;
 	}
 	.nm_usc_youtube img{
 		margin: 30px auto;
@@ -630,11 +728,11 @@ header{
 	.nm_usc_apply h3 {
 		margin-left: 0px;
 		margin-top: 60px;
+		font-size: 23px;
 	}
 	.nm_usc_apply button {
 		left: 0px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding: 15px;
 		font-size: 15px;
 		margin-top: 45px;
 	}
@@ -647,11 +745,50 @@ header{
 	}
 	.nm_usc_reason_area table{
 		margin-top: 30px;
+		width: 320px;
+		margin-left: -90px;
+	}
+	.nm_dead_des {
+		margin-left: 0px;
+	}
+	.nm_dead_data {
+		margin-left: 0px;
+	}
+	.nm_app_contact{
+		padding: 30px;
 	}
 	.nm_app_contact h3 {
 		font-size: 30px;
 	}
 }
 
-@media only screen and (max-width:320px){}
+@media only screen and (max-width:380px){
+	.nm_usc_main_form_btn {
+		right: 34px;
+	}
+	.nm_usc_apply button {
+		left: -27%;
+		padding: 15px;
+		font-size: 15px;
+		margin-top: 0;
+	}
+	.nm_usc_apply {
+		margin-top: -26px;
+	}
+	.nm_usc_apply h3 {
+		float: none;
+		text-align: center;
+	}
+	.nm_app_contact h3 img {
+		width: 28px;
+		margin-right: 10px;
+	}
+	.nm_app_contact h3 {
+		font-size: 25px;
+	}
+	.nm_app_contact button {
+		padding-left: 65px;
+		padding-right: 65px;
+	}
+}
 
