@@ -371,7 +371,7 @@ header {
 	padding: 30px 115px 30px 30px;
 	top: -60px;
 	left: -115px;
-	width: 800px;
+	width: 785px;
 }
 
 .nm_usc_spc_ten {
@@ -407,6 +407,10 @@ header {
 }
 
 /* Course area */
+.nm_course{
+	background: #131313;
+	padding: 60px 20px 40px;
+}
 .nm_course .item {
 	overflow: hidden;
 }
@@ -415,7 +419,7 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
-	height: 300px;
+	height: 350px;
 	position: relative;
 	z-index: 1;
 	transition: .7s;
@@ -524,6 +528,23 @@ header {
 	font-size: 12px !important;
 	padding: 4px;
 	border: 1px solid #ECB324;
+}
+
+.nm_course_view{
+	color: #ECB324;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid #ECB324;
+	transition: .7s;
+	display: inline-block;
+}
+.nm_course_view:hover{
+	color: #ECB324;
+}
+
+.nm_course_view:hover .nm_course_view i{
+	margin-right: 10px;
 }
 
 /*Second section*/
@@ -665,7 +686,78 @@ header {
 /*********************
 	Footer Section
 **********************/
+footer{
+	background: #131313;
+	padding: 50px 20px 0px;
+}
+.nm_service_area{
+	color: #fff;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #424447;
+}
+
+.nm_service_area i{
+	font-size: 24px;
+    border: 1px solid #424447;
+    padding: 12px;
+    margin-right: 12px;
+	vertical-align: top;
+	float: left;
+}
+.nm_service{
+	display: table;
+}
+.nm_service p{
+	font-size: 14px;
+}
+.nm-header-icon{
+	background: #131313;
+	border: 1px solid #424447;
+	display: inline-block;
+	list-style-type: none;
+	margin-top: 10px;
+	padding: 15px 15px 10px;
+	position: relative;
+	top: -38px;
+}
+
+.nm-header-icon li{
+	display: inline;
+}
+.nm-header-icon li a{
+	padding: 10px;
+}
+.nm-header-icon i{
+	font-size: 22px;
+	transition: .5s;
+	color: #ECB324;
+}
+.nm_widget{
+	color: #fff;
+	border-bottom: 1px solid #424447;
+	padding-bottom: 50px;
+}
+.nm_widget h4{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.nm_widget ul li a{
+	color: rgba(255,255,255,.75);
+	font-size: 14px;
+	transition: .7s;
+}
+
+.nm_widget ul li a:hover{
+	color: #fff;
+}
+
+
+
 .footer-text p {
+	color: #fff;
+	font-size: 14px;
 	margin-bottom: 0px;
 	line-height: 60px;
 }
@@ -674,14 +766,14 @@ header {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {}
+/* @media only screen and (min-width: 35em) {}
 
 @media print,
 (-o-min-device-pixel-ratio: 5/4),
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {}
 
-@media only screen and (max-width:1290px) {}
+@media only screen and (max-width:1290px) {} */
 
 @media only screen and (max-width:1030px) {
 	.nm_usc_form_sec {
@@ -748,6 +840,10 @@ header {
 		top: 50px;
 		left: 0px;
 		width: 100%;
+	}
+
+	.nm_course{
+		margin-top: 150px;
 	}
 
 	.section_second {
@@ -946,6 +1042,9 @@ header {
 
 	.nm_app_contact h3 {
 		font-size: 30px;
+	}
+	.nm_widget{
+		text-align: center;
 	}
 }
 
