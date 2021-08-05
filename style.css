@@ -703,6 +703,8 @@ footer{
     margin-right: 12px;
 	vertical-align: top;
 	float: left;
+	color: #131313;
+	background: #fff;
 }
 .nm_service{
 	display: table;
