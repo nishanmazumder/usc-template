@@ -1,0 +1,1077 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*Global style*/
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	margin: 0px auto;
+	overflow-x: hidden;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* img{} */
+
+.img-size-1 {
+	width: 200px;
+}
+
+.nm_seperator {
+	border: 1px dashed #fff;
+	margin: 25px 0px;
+}
+
+.nm_no_pad {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+/*Fonts*/
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+.nm_font_oswald {
+	font-family: 'Oswald', sans-serif;
+}
+
+.nm_font_ibm {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nm_font_mont {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nm_font_roboto {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nm_header_h1 {
+	font-size: 46px;
+	letter-spacing: -2px;
+	line-height: 40px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+}
+
+.nm_header_h1_2 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+
+.nm_paragraph {
+	font-size: 15px;
+	letter-spacing: 0px;
+	line-height: 22px;
+	/* font-family: "Gill Sans"; */
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nm_list {
+	font-size: 18px;
+	letter-spacing: 0px;
+	line-height: 27px;
+	/* color: rgb(5,5,5); */
+	color: #000;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nm_letter_spacing {
+	letter-spacing: 7px;
+}
+
+.font_color_white {
+	color: rgb(255, 255, 255);
+}
+
+.font_color_yellow {
+	color: #BD8A0A;
+}
+
+.font_color_red {
+	color: #B30A3A;
+}
+
+
+
+/*********************
+	Header Section
+**********************/
+
+.header {
+	background: url(img/main_bg.png) no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+.nm_usc_logo img {
+	width: 250px;
+	border-radius: 0px;
+}
+
+.nm_usc_headline {
+	padding: 50px 40px 50px 0px;
+
+}
+
+.nm_usc_form_sec {
+	padding: 0px 50px;
+}
+
+.nm_usc_form_area {
+	background: #1D1D1D;
+}
+
+.nm_usc_form {
+	background: #F9F9FA;
+	padding: 10px 40px 0px;
+}
+
+.nm_usc_form_area h3 {
+	padding: 12px 0px 6px;
+}
+
+.nm_usc_form h3 {
+	padding: 0px 0px 6px;
+}
+
+.nm_usc_form input {
+	line-height: 25px;
+	font-size: 12px;
+	border-radius: 0px;
+	border-color: #BABABA;
+}
+
+.nm_usc_form .form-control {
+	margin-bottom: -5px !important;
+}
+
+.form-control:focus {
+	border-color: #B30A3A;
+	box-shadow: 0 0 0 0.2rem rgb(255 0 82 / 25%);
+}
+
+.nm_usc_form .nm_font_mont {
+	font-size: 10px;
+}
+
+.nm_usc_form .form-check-input {
+	height: 20px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: #7B1FA2;
+}
+
+.custom-control-input:checked~.custom-control-label.red::before {
+	background-color: red;
+}
+
+.custom-control-input:checked~.custom-control-label.green::before {
+	background-color: green;
+}
+
+.nm_usc_form .form-check {
+	padding-left: 0px;
+}
+
+.usc_zip {
+	margin-left: 10px;
+}
+
+.nm_usc_sbt_btn {
+	border-radius: 0px;
+	padding: 20px 50px;
+	color: rgb(255, 255, 255);
+	background: #C90D2C;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 18px;
+	cursor: pointer;
+	transition: .7s;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nm_usc_sbt_btn:hover {
+	background: #D64E4E;
+}
+
+
+.nm_usc_main_form_btn {
+	position: relative;
+	display: block;
+	margin: 0px auto;
+	top: 30px;
+}
+
+.nm_usc_headline img {
+	position: relative;
+	display: block;
+	width: 100px;
+	float: right;
+	top: -30px;
+	right: -70px;
+}
+
+/** Nav Section **/
+
+.nm_usc_nav i {
+	float: right;
+	color: #fff;
+	cursor: pointer;
+}
+
+.nm-overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #C90D2C;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.nm-overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.nm-overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nm-overlay a:hover,
+.nm-overlay a:focus {
+	color: #f1f1f1;
+}
+
+.nm-overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+.nm-overlay a:hover {
+	transform: scale(1.2);
+}
+
+@media screen and (max-height: 450px) {
+	.nm-overlay {
+		overflow-y: auto;
+	}
+
+	.nm-overlay a {
+		font-size: 20px
+	}
+
+	.nm-overlay .closebtn {
+		font-size: 40px;
+		top: 15px;
+		right: 35px;
+	}
+}
+
+
+/*********************
+	Content Section
+**********************/
+
+/*First section*/
+
+.section_first {
+	background: url(img/white_bg.png) no-repeat;
+	background-size: continer;
+	background-position: center;
+}
+
+/* .nm_usc_youtube{
+	
+} */
+
+.nm_usc_youtube img {
+	width: 600px;
+	position: relative;
+	display: block;
+	margin: 120px 0px;
+	z-index: 10;
+}
+
+.nm_usc_apply {
+	margin-top: -100px;
+}
+
+.nm_usc_apply h3 {
+	font-size: 28px;
+	font-weight: 700;
+	float: left;
+	margin: 15px;
+}
+
+.nm_usc_apply h3 img {
+	width: 30px;
+	margin-right: 20px;
+}
+
+.nm_usc_apply button {
+	position: relative;
+	display: block;
+	z-index: 90;
+	float: right;
+	left: 45px;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.nm_usc_reson {
+	background: #ECB324;
+	position: relative;
+	display: block;
+	padding: 30px 115px 30px 30px;
+	top: -60px;
+	left: -115px;
+	width: 785px;
+}
+
+.nm_usc_spc_ten {
+	font-size: 150px;
+	font-weight: bold;
+	color: #E2A21C;
+	display: block;
+	margin-top: -25px;
+}
+
+.nm_usc_reason_area {
+	margin-left: -20px;
+}
+
+.nm_usc_reason_area h1 {
+	font-weight: 700;
+}
+
+.nm_reson_list_style {
+	color: #AA5F00;
+	font-weight: 700;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+.nm_usc_reason_area td {
+	line-height: 18px;
+}
+
+.nm_usc_reason_area p {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/* Course area */
+.nm_course{
+	background: #131313;
+	padding: 60px 20px 40px;
+}
+.nm_course .item {
+	overflow: hidden;
+}
+
+.nm_course_area {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 350px;
+	position: relative;
+	z-index: 1;
+	transition: .7s;
+}
+
+.nm_course_area:hover .nm_course_data_overlay {
+	bottom: 0px;
+}
+
+.nm_course_area:hover .nm_course_data {
+	bottom: -999px;
+}
+
+.nm_course_area:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.nm_course_date {
+	position: absolute;
+	display: inline-block;
+	padding: 5px 10px;
+    border: 1px solid #ECB324;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 14px;
+	color: #fff;
+	right: 0;
+	font-family: 'Montserrat', sans-serif;
+	transition: .7s;
+}
+
+.nm_course_data {
+	background: rgb(0 0 0 / 51%);
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	padding: 20px;
+	
+}
+
+.nm_course_data h3 {
+	color: #fff;
+	font-size: 18px;
+}
+
+.nm_course_data span {
+	color: #ECB324;
+	
+}
+
+.nm_course_data h3:hover {
+	color: #fff;
+}
+
+.nm_course_data span:hover {
+	color: #ECB324;
+}
+
+.nm_course_data_overlay {
+	position: absolute;
+	bottom: -999px;
+	transition: .5s;
+	background: rgb(0 0 0 / 51%);
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	padding: 20px 15px 15px;
+}
+
+.nm_course_data_overlay h3 {
+	color: #fff;
+	font-size: 24px;
+}
+
+.nm_course_data_overlay span {
+	color: #ECB324;
+    font-size: 14px;
+}
+
+.nm_course_data_overlay p{
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+
+.nm_course_data_overlay h3:hover {
+	color: #fff;
+}
+
+.nm_course_data_overlay span:hover {
+	color: #ECB324;
+}
+
+.nm_course_readmore{
+	font-size: 12px !important;
+	padding: 4px;
+	border: 1px solid #ECB324;
+}
+
+.nm_course_view{
+	color: #ECB324;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid #ECB324;
+	transition: .7s;
+	display: inline-block;
+}
+.nm_course_view:hover{
+	color: #ECB324;
+}
+
+.nm_course_view:hover .nm_course_view i{
+	margin-right: 10px;
+}
+
+/*Second section*/
+
+.section_second {
+	padding: 50px 0px;
+}
+
+.nm_app_info {
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.nm_app_info h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.nm_app_info p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.nm_app_des {
+	font-size: 14px;
+	font-weight: 700;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.nm_app_des h4 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.nm_app_des table {
+	margin-bottom: 20px;
+}
+
+.nm_app_des img {
+	width: 13px;
+	margin-right: 10px;
+}
+
+.nm_app_des td {
+	line-height: 25px;
+}
+
+.nm_nested_list {
+	margin-left: 20px;
+	margin-top: -10px;
+}
+
+/*Right Side*/
+
+
+.nm_dead_des {
+	padding: 30px 0px 20px 50px;
+	margin-bottom: 10px;
+	background: #F2F1ED;
+}
+
+.nm_dead_des h4 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.nm_dead_des p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.nm_dead_data {
+	background: #F2F1ED;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 30px 0px 20px 50px;
+}
+
+.nm_dead_data td {
+	padding: 10px;
+}
+
+
+
+
+
+/*Third section*/
+
+.section_third {
+	padding-bottom: 60px;
+}
+
+.nm_app_fee {
+	padding-right: 50px;
+	text-align: justify;
+}
+
+.nm_app_fee h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.nm_app_fee p {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+.nm_app_contact {
+	background: #131313;
+	padding: 50px;
+	text-align: center;
+}
+
+.nm_app_contact h3 {
+	font-size: 28px;
+	font-weight: 700;
+	/* float: left; */
+	margin: 15px;
+	color: #fff;
+}
+
+.nm_app_contact h3 img {
+	width: 30px;
+	margin-right: 30px;
+}
+
+.nm_app_contact button {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+/*********************
+	Footer Section
+**********************/
+footer{
+	background: #131313;
+	padding: 50px 20px 0px;
+}
+.nm_service_area{
+	color: #fff;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #424447;
+}
+
+.nm_service_area i{
+	font-size: 24px;
+    border: 1px solid #424447;
+    padding: 12px;
+    margin-right: 12px;
+	vertical-align: top;
+	float: left;
+	color: #131313;
+	background: #fff;
+}
+.nm_service{
+	display: table;
+}
+.nm_service p{
+	font-size: 14px;
+}
+.nm-header-icon{
+	background: #131313;
+	border: 1px solid #424447;
+	display: inline-block;
+	list-style-type: none;
+	margin-top: 10px;
+	padding: 15px 15px 10px;
+	position: relative;
+	top: -38px;
+}
+
+.nm-header-icon li{
+	display: inline;
+}
+.nm-header-icon li a{
+	padding: 10px;
+}
+.nm-header-icon i{
+	font-size: 22px;
+	transition: .5s;
+	color: #ECB324;
+}
+.nm_widget{
+	color: #fff;
+	border-bottom: 1px solid #424447;
+	padding-bottom: 50px;
+}
+.nm_widget h4{
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.nm_widget ul li a{
+	color: rgba(255,255,255,.75);
+	font-size: 14px;
+	transition: .7s;
+}
+
+.nm_widget ul li a:hover{
+	color: #fff;
+}
+
+
+
+.footer-text p {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 0px;
+	line-height: 60px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* @media only screen and (min-width: 35em) {}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {}
+
+@media only screen and (max-width:1290px) {} */
+
+@media only screen and (max-width:1030px) {
+	.nm_usc_form_sec {
+		padding: 0px;
+	}
+
+	.nm_usc_youtube img {
+		width: 500px;
+	}
+
+	.nm_usc_apply h3 {
+		margin-left: 0px;
+	}
+
+	.nm_usc_apply button {
+		left: 35px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.nm_usc_reson {
+		padding: 20px;
+		top: -60px;
+		left: -115px;
+		width: 124%;
+	}
+}
+
+@media only screen and (max-width:780px) {
+	header {
+		background: url(img/main_bg.png) no-repeat;
+		background-position: top;
+		padding-top: 20px;
+		padding-bottom: 80px;
+	}
+
+	.nm_usc_headline {
+		padding: auto;
+	}
+
+	/* .nm_usc_form_sec {
+		padding-right: 50px;
+	} */
+	.nm_usc_headline img {
+		display: none;
+	}
+
+	.nm_usc_youtube img {
+		width: 100%;
+	}
+
+	.nm_usc_apply {
+		margin-top: -55px;
+	}
+
+	.nm_usc_apply button {
+		left: 0px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.nm_usc_reson {
+		padding: 50px 20px;
+		top: 50px;
+		left: 0px;
+		width: 100%;
+	}
+
+	.nm_course{
+		margin-top: 150px;
+	}
+
+	.section_second {
+		padding: 50px 0px;
+		margin-top: 80px;
+	}
+
+	.nm_app_info {
+		padding-right: 0px;
+	}
+
+	.nm_app_des {
+		padding-right: 0px;
+	}
+
+	.nm_dead_des {
+		padding: 30px 0px 20px 30px;
+		margin-left: 20px;
+	}
+
+	.nm_dead_data td {
+		padding: 5px;
+	}
+
+	.nm_dead_data {
+		padding: 30px 0px 20px 30px;
+		margin-left: 20px;
+	}
+
+	.nm_app_contact h3 {
+		font-size: 50px;
+		float: none;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+
+	.nm_app_contact h3 img {
+		width: 50px;
+	}
+
+	.nm_app_contact button {
+		display: block;
+		margin: 0px auto;
+	}
+}
+
+@media only screen and (max-width:650px) {
+
+	.nm_header_h1 {
+		font-size: 36px;
+	}
+
+	.nm_paragraph {
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	.nm_letter_spacing {
+		font-size: 22px;
+		letter-spacing: 4px;
+	}
+
+	.nm_usc_apply button {
+		left: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.nm_usc_reason_area table {
+		margin-top: 30px;
+	}
+
+	.nm_usc_spc_ten {
+		font-size: 120px;
+	}
+
+	.nm_usc_reson {
+		width: 99%;
+	}
+
+	.nm_usc_reason_area h1 {
+		font-size: 33px;
+	}
+
+	.nm_usc_reason_area p {
+		font-size: 16px;
+	}
+
+	.nm_app_info p {
+		font-size: 16px;
+	}
+
+	.nm_app_info h2 {
+		font-size: 34px;
+	}
+
+	.nm_app_des h4 {
+		font-size: 18px;
+	}
+
+	.nm_app_des {
+		font-size: 16px;
+	}
+
+	.nm_dead_des h4 {
+		font-size: 24px;
+	}
+
+	.nm_dead_des p {
+		font-size: 16px;
+	}
+
+	.nm_dead_data td {
+		padding: 10px;
+	}
+
+	.nm_dead_data {
+		font-size: 16px;
+	}
+
+	.nm_app_fee h2 {
+		font-size: 34px;
+	}
+
+	.nm_app_fee p {
+		font-size: 16px;
+	}
+
+	.nm_app_contact h3 {
+		font-size: 35px;
+	}
+
+	.nm_app_contact h3 img {
+		width: 35px;
+	}
+
+}
+
+@media only screen and (max-width:490px) {
+	.nm_usc_nav i {
+		margin-top: -60px;
+	}
+
+	.nm_usc_form_sec {
+		padding: 0px;
+		margin-top: 50px;
+	}
+
+	.nm_usc_main_form_btn {
+		right: 15px;
+	}
+
+	.nm_usc_youtube img {
+		margin: 30px auto;
+	}
+
+	.nm_usc_apply h3 {
+		margin-left: 0px;
+		margin-top: 60px;
+		font-size: 23px;
+	}
+
+	.nm_usc_apply button {
+		left: 0px;
+		padding: 15px;
+		font-size: 15px;
+		margin-top: 45px;
+	}
+
+	.nm_usc_spc_ten {
+		font-size: 90px;
+		margin-top: -10px;
+	}
+
+	.nm_usc_reason_area h1 {
+		font-size: 28px;
+	}
+
+	.nm_usc_reason_area table {
+		margin-top: 30px;
+		width: 320px;
+		margin-left: -90px;
+	}
+
+	.nm_dead_des {
+		margin-left: 0px;
+	}
+
+	.nm_dead_data {
+		margin-left: 0px;
+	}
+
+	.nm_app_contact {
+		padding: 30px;
+	}
+
+	.nm_app_contact h3 {
+		font-size: 30px;
+	}
+	.nm_widget{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width:380px) {
+	.nm_usc_main_form_btn {
+		right: 34px;
+	}
+
+	.nm_usc_apply button {
+		left: -27%;
+		padding: 15px;
+		font-size: 15px;
+		margin-top: 0;
+	}
+
+	.nm_usc_apply {
+		margin-top: -26px;
+	}
+
+	.nm_usc_apply h3 {
+		float: none;
+		text-align: center;
+	}
+
+	.nm_app_contact h3 img {
+		width: 28px;
+		margin-right: 10px;
+	}
+
+	.nm_app_contact h3 {
+		font-size: 25px;
+	}
+
+	.nm_app_contact button {
+		padding-left: 65px;
+		padding-right: 65px;
+	}
+}

@@ -3,7 +3,7 @@
 /**
  * Post Page
  * 
- * @package NM_THEME
+ * @package NM_USC
  */
 ?>
 
