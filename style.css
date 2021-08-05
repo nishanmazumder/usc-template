@@ -17,3 +17,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     width: 100%;
     height: auto;
 }
+
+.nm-widget-social{
+    margin-bottom: 0px;
+}
+.nm-widget-social .wp-block-social-link{
+    margin: 0px !important;
+}
+.nm-widget-social .wp-block-social-link-anchor{
+    padding: 0px !important;
+}

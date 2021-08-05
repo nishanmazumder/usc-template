@@ -32,11 +32,11 @@ class Assets
     public function register_styles()
     {
         wp_enqueue_style('bootstrap-css', NM_DIR_URI . '/assets/css/bootstrap.min.css');
-        wp_enqueue_style('stylesheet', NM_STYLE_URI, [], filemtime(NM_DIR_PATH . '/style.css'), 'all');
-
+        
         wp_enqueue_style('owl-carousel', NM_DIR_URI . '/assets/css/owl.carousel.min.css');
         wp_enqueue_style('fontawesome', NM_DIR_URI . '/assets/css/fontawesome-all.css');
         wp_enqueue_style('main-css', NM_DIR_URI . '/assets/css/style.css', [], filemtime(NM_DIR_PATH. '/assets/css/style.css'), 'all');
+        wp_enqueue_style('stylesheet', NM_STYLE_URI, [], filemtime(NM_DIR_PATH . '/style.css'), 'all');
 
         // wp_register_style('is_archive', get_template_directory_uri() . '/archive.css', [], filemtime(get_template_directory('/archive.css')), 'all');
 

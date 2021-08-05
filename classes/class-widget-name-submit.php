@@ -14,7 +14,7 @@ use WP_Widget;
 /**
  * Adds Foo_Widget widget.
  */
-class Clock_Widget extends WP_Widget
+class Name_Submission extends WP_Widget
 {
 
     /**
@@ -25,7 +25,7 @@ class Clock_Widget extends WP_Widget
         parent::__construct(
             'nm_name_widget', // Base ID
             'Name Submission', // Name
-            array('description' => __('Clock Widget', 'nm_theme'),) // Args
+            array('description' => __('Name Submission', 'nm_theme'),) // Args
         );
     }
 
@@ -46,26 +46,9 @@ class Clock_Widget extends WP_Widget
         if (!empty($title)) {
             echo $before_title . $title . $after_title;
         }
-
-        // From frontend form submission...
-        // if (isset($_POST['nm_btn_submit'])) {
-        //     $user_name = $_POST['nm_name_user'];
-        //     $this->form($user_name);
-        // }
-
 ?>
         <div class="row">
             <div class="col-md-12 mt-2 mb-2 bg-info pt-2 pb-3">
-
-                <!-- <form method="POST" class="mb-3 mt-3">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" name="<?php echo $this->get_field_name("nm_name_user"); ?>" id="<?php echo $this->get_field_id("nm_name_user"); ?>" placeholder="My Name">
-                    </div>
-                    <div class="d-grid">
-                        <button name="<?php echo $this->get_field_name("nm_btn_submit"); ?>" type="submit" class="btn btn-outline-danger">Submit</button>
-                    </div>
-                </form> -->
-
                 <span><?php echo esc_html__("Name Listed Today:", "nm_theme") ?></span>
                 <ul class="list-group list-group-numbered">
                     <li class="list-group-item">

@@ -116,7 +116,7 @@ a:hover {
 	Header Section
 **********************/
 
-.header {
+header {
 	background: url(img/main_bg.png) no-repeat;
 	background-position: center;
 	padding-top: 20px;
@@ -704,13 +704,13 @@ footer{
 }
 .nm-header-icon{
 	background: #131313;
-	border: 1px solid #424447;
-	display: inline-block;
-	list-style-type: none;
-	margin-top: 10px;
-	padding: 15px 15px 10px;
-	position: relative;
-	top: -38px;
+    border: 1px solid #424447;
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 5px 15px 5px;
+    position: relative;
+    top: -38px;
 }
 
 .nm-header-icon li{
@@ -735,7 +735,7 @@ footer{
 	margin-bottom: 20px;
 }
 
-.nm_widget ul li a{
+.nm_widget ul li a, .nm_widget ul li{
 	color: rgba(255,255,255,.75);
 	font-size: 14px;
 	transition: .7s;

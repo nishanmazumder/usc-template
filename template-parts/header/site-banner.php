@@ -68,16 +68,6 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="row no-gutters">
-                                        <!-- <div class="col">
-														<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-														<label class="form-check-label" for="gridRadios1">Yes</label>
-													</div>
-													<div class="col">
-														<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-														<label class="form-check-label" for="gridRadios1">No</label>
-													</div> -->
-
-
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input type="radio" id="rd_1" name="rd" class="custom-control-input" value="Yes">
                                             <label class="custom-control-label red" for="rd_1">Yes</label>
