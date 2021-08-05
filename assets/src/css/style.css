@@ -1,0 +1,23 @@
+body{
+    max-width: 100%;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-logo{
+    width: 150px;
+    height: 100%;
+}
+
+.nm_term_list a{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.widget img{
+    max-width: 100%;
+}
