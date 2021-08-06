@@ -17,19 +17,19 @@ $widget = \NM_THEME\Inc\Classes\Sidebar::get_instance();
 <div class="row nm_widget">
     <div class="col-md-3 col-sm-6 col-xs-12">
         <?php
-        //$widget->test_widget_init('test-me');
+        $widget->get_info('From Template');
+        //$widget->display_widget();
 
-        register_sidebar(
-            array(
-                'id'            => 'test-side',
-                'name'          => __( 'Test Sidebar', 'nm_theme'),
-                'description'   => __( 'Widgets for page sidebar', 'nm_theme'),
-                'before_widget' => '<div id="%1$s" class="col-md-3 col-sm-6 col-xs-12 %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h4 class="nm_font_mont">',
-                'after_title'   => '</h4>',
-            )
-        );
+        echo $widget->nm_widget_name;
+
+        //$widget->set_name("Nishan");
+        //$widget->echo_name();
+
+
+        
+
+        
+
         ?>
         <!-- <h4 class="nm_font_mont">ENGINEERING</h4>
         <ul>
