@@ -11,32 +11,9 @@
 <footer>
     <div class="container">
         <div class="row nm_service_area">
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <i class="fas fa-arrow-right"></i>
-                <div class="nm_service">
-                    <h4>Title</h4>
-                    <p>This is data. This is data. This is data. This is data This is data. This is data</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <i class="fas fa-arrow-right"></i>
-                <div class="nm_service">
-                    <h4>Title</h4>
-                    <p>This is data. This is data.</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <i class="fas fa-arrow-right"></i>
-                <div class="nm_service">
-                    <h4>Title</h4>
-                    <p>This is data. This is data.</p>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <i class="fas fa-arrow-right"></i>
-                <div class="nm_service">
-                    <h4>Title</h4>
-                    <p>This is data. This is data.</p>
-                </div>
-            </div>
+            <?php
+            if (is_active_sidebar('footer-services')) {
+                dynamic_sidebar('footer-services');
+            }
+            ?>
         </div>

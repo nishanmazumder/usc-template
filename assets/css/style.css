@@ -684,17 +684,15 @@ footer{
 	color: #fff;
 	padding-bottom: 80px;
 	border-bottom: 1px solid #424447;
+	text-align: center;
 }
 
 .nm_service_area i{
 	font-size: 24px;
-    border: 1px solid #424447;
+    border: 1px solid #fff;
     padding: 12px;
-    margin-right: 12px;
-	vertical-align: top;
-	float: left;
-	color: #131313;
-	background: #fff;
+    margin-bottom: 15px;
+    color: #fff;
 }
 .nm_service{
 	display: table;

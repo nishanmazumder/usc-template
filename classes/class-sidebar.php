@@ -25,6 +25,9 @@ class Sidebar
     {
         //Actions
         add_action( 'widgets_init', [$this, 'register_sidbars'] );
+
+        // Widget Register - Footer Services
+        add_action( 'widgets_init', [$this, 'nm_footer_services'] );
     }
 
     public function register_sidbars(){
@@ -47,10 +50,10 @@ class Sidebar
                 'id'            => 'footer-services',
                 'name'          => __( 'Footer Services', 'nm_theme'),
                 'description'   => __( 'Widgets for footer services', 'nm_theme'),
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                'before_widget' => '<div id="%1$s" class="col-md-3 col-sm-6 col-xs-12 %2$s">',
                 'after_widget'  => '</div>',
-                'before_title'  => '<h3 class="widget-title">',
-                'after_title'   => '</h3>',
+                'before_title'  => '',
+                'after_title'   => '',
             )
         );
 
@@ -60,10 +63,6 @@ class Sidebar
                 'id'            => 'footer-social',
                 'name'          => __( 'Footer Social', 'nm_theme'),
                 'description'   => __( 'Widgets for footer social', 'nm_theme'),
-                'before_widget' => '',
-                'after_widget'  => '',
-                'before_title'  => '',
-                'after_title'   => '',
             )
         );
 
@@ -79,6 +78,11 @@ class Sidebar
                 'after_title'   => '</h4>',
             )
         );
+    }
+
+    //Footer Service registration
+    public function nm_footer_services(){
+        register_widget( 'NM_THEME\Inc\Classes\Footer_Services' );
     }
  
 }
