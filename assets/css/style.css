@@ -681,10 +681,18 @@ footer{
 	padding: 50px 20px 0px;
 }
 .nm_service_area{
-	color: #fff;
 	padding-bottom: 80px;
 	border-bottom: 1px solid #424447;
 	text-align: center;
+}
+
+.nm_service_area h4{
+	color: #fff;
+	font-weight: 400;
+}
+
+.nm_service_area p{
+	color: rgba(255,255,255,.75);
 }
 
 .nm_service_area i{
