@@ -32,7 +32,7 @@ require_once NM_DIR_PATH . '/vendor/autoload.php';
 nm_theme_get_instance();
 function nm_theme_get_instance()
 {
-   \NM_THEME\Inc\Classes\NM_THEME::get_instance();
+   \NM_THEME\Classes\NM_THEME::get_instance();
 }
 
 /**
@@ -46,12 +46,22 @@ require_once NM_DIR_PATH . '/inc/template-functions.php';
 require_once NM_DIR_PATH . '/inc/template-tags.php';
 
 /**
- * Tester
- */
-require_once NM_DIR_PATH . '/inc/helpers/info&tester.php';
-
-/**
  * Load Require plugin by TGM
  */
-require_once NM_DIR_PATH . '/lib/tgm/class-tgm-plugin-activation.php';
-require_once NM_DIR_PATH . '/lib/tgm/config.php';
+require_once NM_DIR_PATH . '/inc/tgm-activation.php';
+require_once NM_DIR_PATH . '/inc/tgm-config.php';
+
+/**
+ * ACF
+ */
+
+// if ( is_plugin_active('advanced-custom-fields') ) {
+//    // do something
+// }
+
+// Hide the ACF admin menu item.
+// add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
+// function my_acf_settings_show_admin( $show_admin ) {
+//     return false;
+// }
+

@@ -311,14 +311,16 @@ header {
 /*First section*/
 
 .section_first {
-	background: url(img/white_bg.png) no-repeat;
-	background-size: continer;
-	background-position: center;
+	background-position: top center !important;
+	/* background-size: cover !important; */
+	background-repeat: no-repeat !important;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
-/* .nm_usc_youtube{
-	
-} */
+.nm_usc_youtube {
+	width: 600px;
+}
 
 .nm_usc_youtube img {
 	width: 600px;
@@ -328,8 +330,14 @@ header {
 	z-index: 10;
 }
 
+.nm_usc_youtube iframe {
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+
 .nm_usc_apply {
-	margin-top: -100px;
+	margin-top: 20px;
 }
 
 .nm_usc_apply h3 {
@@ -359,7 +367,7 @@ header {
 	position: relative;
 	display: block;
 	padding: 30px 115px 30px 30px;
-	top: -60px;
+	margin-top: -160px;
 	left: -115px;
 	width: 785px;
 }
@@ -397,10 +405,11 @@ header {
 }
 
 /* Course area */
-.nm_course{
+.nm_course {
 	background: #131313;
 	padding: 60px 20px 40px;
 }
+
 .nm_course .item {
 	overflow: hidden;
 }
@@ -441,7 +450,7 @@ header {
 	position: absolute;
 	display: inline-block;
 	padding: 5px 10px;
-    border: 1px solid #ECB324;
+	border: 1px solid #ECB324;
 	background: rgba(0, 0, 0, 0.5);
 	font-size: 14px;
 	color: #fff;
@@ -458,7 +467,7 @@ header {
 	display: block;
 	bottom: 0px;
 	padding: 20px;
-	
+
 }
 
 .nm_course_data h3 {
@@ -468,7 +477,7 @@ header {
 
 .nm_course_data span {
 	color: #ECB324;
-	
+
 }
 
 .nm_course_data h3:hover {
@@ -497,10 +506,10 @@ header {
 
 .nm_course_data_overlay span {
 	color: #ECB324;
-    font-size: 14px;
+	font-size: 14px;
 }
 
-.nm_course_data_overlay p{
+.nm_course_data_overlay p {
 	color: #fff;
 	font-size: 12px;
 	margin-bottom: 5px;
@@ -514,13 +523,13 @@ header {
 	color: #ECB324;
 }
 
-.nm_course_readmore{
+.nm_course_readmore {
 	font-size: 12px !important;
 	padding: 4px;
 	border: 1px solid #ECB324;
 }
 
-.nm_course_view{
+.nm_course_view {
 	color: #ECB324;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
@@ -529,11 +538,12 @@ header {
 	transition: .7s;
 	display: inline-block;
 }
-.nm_course_view:hover{
+
+.nm_course_view:hover {
 	color: #ECB324;
 }
 
-.nm_course_view:hover .nm_course_view i{
+.nm_course_view:hover .nm_course_view i {
 	margin-right: 10px;
 }
 
@@ -676,78 +686,87 @@ header {
 /*********************
 	Footer Section
 **********************/
-footer{
+footer {
 	background: #131313;
 	padding: 50px 20px 0px;
 }
-.nm_service_area{
+
+.nm_service_area {
 	padding-bottom: 80px;
 	border-bottom: 1px solid #424447;
 	text-align: center;
 }
 
-.nm_service_area h4{
+.nm_service_area h4 {
 	color: #fff;
 	font-weight: 400;
 }
 
-.nm_service_area p{
-	color: rgba(255,255,255,.75);
+.nm_service_area p {
+	color: rgba(255, 255, 255, .75);
 }
 
-.nm_service_area i{
+.nm_service_area i {
 	font-size: 24px;
-    border: 1px solid #fff;
-    padding: 12px;
-    margin-bottom: 15px;
-    color: #fff;
+	border: 1px solid #fff;
+	padding: 12px;
+	margin-bottom: 15px;
+	color: #fff;
 }
-.nm_service{
+
+.nm_service {
 	display: table;
 }
-.nm_service p{
+
+.nm_service p {
 	font-size: 14px;
 }
-.nm-header-icon{
+
+.nm-header-icon {
 	background: #131313;
-    border: 1px solid #424447;
-    display: inline-block;
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 5px 15px 5px;
-    position: relative;
-    top: -38px;
+	border: 1px solid #424447;
+	display: inline-block;
+	list-style-type: none;
+	margin-top: 10px;
+	padding: 5px 15px 5px;
+	position: relative;
+	top: -38px;
 }
 
-.nm-header-icon li{
+.nm-header-icon li {
 	display: inline;
 }
-.nm-header-icon li a{
+
+.nm-header-icon li a {
 	padding: 10px;
 }
-.nm-header-icon i{
+
+.nm-header-icon i {
 	font-size: 22px;
 	transition: .5s;
 	color: #ECB324;
 }
-.nm_widget{
+
+.nm_widget {
 	color: #fff;
 	border-bottom: 1px solid #424447;
 	padding-bottom: 50px;
 }
-.nm_widget h4{
+
+.nm_widget h4 {
 	color: #fff;
 	font-size: 18px;
 	margin-bottom: 20px;
 }
 
-.nm_widget ul li a, .nm_widget ul li{
-	color: rgba(255,255,255,.75);
+.nm_widget ul li a,
+.nm_widget ul li {
+	color: rgba(255, 255, 255, .75);
 	font-size: 14px;
 	transition: .7s;
 }
 
-.nm_widget ul li a:hover{
+.nm_widget ul li a:hover {
 	color: #fff;
 }
 
@@ -778,6 +797,10 @@ footer{
 		padding: 0px;
 	}
 
+	.nm_usc_youtube {
+		width: 100%;
+	}
+
 	.nm_usc_youtube img {
 		width: 500px;
 	}
@@ -794,7 +817,6 @@ footer{
 
 	.nm_usc_reson {
 		padding: 20px;
-		top: -60px;
 		left: -115px;
 		width: 124%;
 	}
@@ -823,10 +845,6 @@ footer{
 		width: 100%;
 	}
 
-	.nm_usc_apply {
-		margin-top: -55px;
-	}
-
 	.nm_usc_apply button {
 		left: 0px;
 		padding-left: 60px;
@@ -835,12 +853,12 @@ footer{
 
 	.nm_usc_reson {
 		padding: 50px 20px;
-		top: 50px;
+		margin-top: 50px;
 		left: 0px;
 		width: 100%;
 	}
 
-	.nm_course{
+	.nm_course {
 		margin-top: 150px;
 	}
 
@@ -1004,6 +1022,10 @@ footer{
 		font-size: 23px;
 	}
 
+	.nm_usc_apply {
+		margin-top: -25px;
+	}
+
 	.nm_usc_apply button {
 		left: 0px;
 		padding: 15px;
@@ -1012,17 +1034,17 @@ footer{
 	}
 
 	.nm_usc_spc_ten {
-		font-size: 90px;
+		font-size: 68px;
 		margin-top: -10px;
 	}
 
 	.nm_usc_reason_area h1 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	.nm_usc_reason_area table {
 		margin-top: 30px;
-		width: 320px;
+		width: 315px;
 		margin-left: -90px;
 	}
 
@@ -1041,14 +1063,43 @@ footer{
 	.nm_app_contact h3 {
 		font-size: 30px;
 	}
-	.nm_widget{
+
+	.nm_widget {
 		text-align: center;
+	}
+
+	.nm_service{
+		margin: 0px auto;
+	}
+
+	.nm_widget h4 {
+		font-size: 22px;
+	}
+
+	.nm_widget ul li a, .nm_widget ul li {
+		font-size: 18px;
+	}
+
+	.widget_nav_menu{
+		margin-bottom: 30px;
+	}
+
+	.widget_nav_menu:last-child{
+		margin-bottom: 0px;
+	}
+
+	.footer-text p{
+		font-size: 18px;
 	}
 }
 
 @media only screen and (max-width:380px) {
-	.nm_usc_main_form_btn {
-		right: 34px;
+	.section_first {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+	.nm_usc_form {
+		padding: 10px 20px 0px;
 	}
 
 	.nm_usc_apply button {
@@ -1079,5 +1130,10 @@ footer{
 	.nm_app_contact button {
 		padding-left: 65px;
 		padding-right: 65px;
+	}
+
+	.footer-text p {
+		line-height: 30px;
+		margin: 20px 0px;
 	}
 }

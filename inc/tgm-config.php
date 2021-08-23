@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file represents an example of the code that themes would use to register
  * the required plugins.
@@ -33,7 +34,7 @@
  */
 //require_once get_template_directory() . 'lib/tgm/class-tgm-plugin-activation.php';
 
-add_action( 'tgmpa_register', 'nmbet_register_required_plugins' );
+add_action('tgmpa_register', 'nmbet_register_required_plugins');
 
 /**
  * Register the required plugins for this theme.
@@ -52,7 +53,8 @@ add_action( 'tgmpa_register', 'nmbet_register_required_plugins' );
  *
  * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
  */
-function nmbet_register_required_plugins() {
+function nmbet_register_required_plugins()
+{
 	/*
 	 * Array of plugin arrays. Required keys are name and slug.
 	 * If the source is NOT from the .org repo, then source is also required.
@@ -95,15 +97,23 @@ function nmbet_register_required_plugins() {
 			'slug'      => 'elementor',
 			//'source'    => get_template_directory() . '/lib/tgm/plugins/megamenu.2.9.3.zip',
 			'required'  => true,
-			'version'   => '3.3.1'
+			'version'   => '3.4.2'
 		),
 
 		// array(
-		// 	'name'      => 'Smart Slider 3',
-		// 	'slug'      => 'smart-slider-3',
+		// 	'name'      => 'Elementor – Header, Footer & Blocks Template',
+		// 	'slug'      => 'header-footer-elementor',
 		// 	//'source'    => get_template_directory() . '/lib/tgm/plugins/megamenu.2.9.3.zip',
 		// 	'required'  => true,
-		// 	'version'   => '3.4.1.17'
+		// 	'version'   => '1.5.9'
+		// )
+
+		// array(
+		// 	'name'      => 'CMB2',
+		// 	'slug'      => 'cmb2',
+		// 	'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
+		// 	'required'  => true,
+		// 	'version'   => '2.9.0'
 		// ),
 
 		array(
@@ -112,6 +122,14 @@ function nmbet_register_required_plugins() {
 			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
 			'required'  => true,
 			'version'   => '5.9.9'
+		),
+
+		array(
+			'name'      => 'Contact Form 7',
+			'slug'      => 'contact-form-7',
+			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
+			'required'  => true,
+			'version'   => '5.4.2'
 		)
 
 	);
@@ -126,7 +144,7 @@ function nmbet_register_required_plugins() {
 	 * Only uncomment the strings in the config array if you want to customize the strings.
 	 */
 	$config = array(
-		'id'           => 'nm_theme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+		'id'           => 'nmTheme',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 		'default_path' => '',                      // Default absolute path to bundled plugins.
 		'menu'         => 'tgmpa-install-plugins', // Menu slug.
 		'has_notices'  => true,                    // Show admin notices or not.
@@ -137,5 +155,5 @@ function nmbet_register_required_plugins() {
 
 	);
 
-	tgmpa( $plugins, $config );
+	tgmpa($plugins, $config);
 }

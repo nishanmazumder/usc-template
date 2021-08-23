@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Widgets - Clock
+ * Widgets - Gutenberg - Footer Services 
  * 
  * @package NM_THEME
  */

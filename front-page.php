@@ -5,13 +5,10 @@
  * 
  * @package NM_USC
  */
-?>
 
-<?php get_header(); ?>
+get_header();
 
+the_content();
+//get_template_part('template-parts/home/home', 'section');
 
-<?php get_template_part('template-parts/home/home', 'section'); ?>
-
-
-
-<?php get_footer(); ?>
+get_footer();
