@@ -49,91 +49,114 @@ class NM_USC_INFO extends Widget_Base
      */
     protected function _register_controls()
     {
-        //USC Video section
+        //Application Information
         $this->start_controls_section(
             'usc_info_section',
             [
-                'label' => __('USC Video', 'nm_theme'),
+                'label' => __('Application Information', 'nm_theme'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
 
-        $this->add_control('usc_phone', [
-            'label' => __('Phone Number', 'nm_theme'),
+        $this->add_control('usc_info_title', [
+            'label' => __('Application Information', 'nm_theme'),
+            'label_block' => true,
             'type' => \Elementor\Controls_Manager::TEXT,
-            'default' => __('(213) 821-5916', 'nm_theme'),
+            'default' => __('Application Information', 'nm_theme'),
         ]);
 
-        $this->add_control('usc_apply_btn', [
-            'label' => __('Apply Button', 'nm_theme'),
-            'type' => \Elementor\Controls_Manager::TEXT,
-            'default' => __('APPLY ONLINE', 'nm_theme'),
+        $this->add_control('usc_info_des', [
+            'label' => __('Description', 'nm_theme'),
+            'label_block' => true,
+            'type' => \Elementor\Controls_Manager::WYSIWYG,
+            'default' => __('We highly recommend that you only submit one application to the degree of most interest to you.', 'nm_theme'),
         ]);
-
 
         $this->end_controls_section();
 
-
-
-        //USC Course section
+        //Application Information List
         $this->start_controls_section(
-            'usc_course_section',
+            'usc_info_list_section',
             [
-                'label' => __('USC Course', 'nm_theme'),
+                'label' => __('Application Information List', 'nm_theme'),
                 'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
             ]
         );
 
-        $this->add_control('usc_title', [
-            'label' => __('Reasons Title', 'nm_theme'),
-            'type' => \Elementor\Controls_Manager::WYSIWYG,
-            'default' => __('Reasons to Pursue <br />An MSL From <span class="font_color_red">USC</span> <br />Gould:', 'nm_theme'),
+        $this->add_control('usc_info_list_title', [
+            'label' => __('Information Title', 'nm_theme'),
+            'label_block' => true,
+            'type' => \Elementor\Controls_Manager::TEXT,
+            'default' => __('Among the required information & documents you will submit are:', 'nm_theme'),
         ]);
 
         $repeater = new \Elementor\Repeater();
 
         $repeater->add_control(
-            'list_title',
+            'usc_info_list_content',
             [
-                'label' => __('Title', 'nm_theme'),
-                'type' => \Elementor\Controls_Manager::TEXT,
-                'default' => __('List Title', 'nm_theme'),
-                'label_block' => true,
-            ]
-        );
-
-        $repeater->add_control(
-            'usc_list_content',
-            [
-                'label' => __('Reasons List', 'nm_theme'),
+                'label' => __('Info List', 'nm_theme'),
                 'type' => \Elementor\Controls_Manager::WYSIWYG,
                 'default' => __('100 percent online — convenient', 'nm_theme'),
                 'show_label' => false,
             ]
         );
 
-        $repeater->add_control(
-            'list_color',
-            [
-                'label' => __('Color', 'nm_theme'),
-                'type' => \Elementor\Controls_Manager::COLOR
-            ]
-        );
-
         $this->add_control(
-            'usc_list',
+            'usc_info_list',
             [
-                'label' => __('Repeater List', 'nm_theme'),
+                'label' => __('Info List', 'nm_theme'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
                     [
-                        'list_title' => __('Title #1', 'plugin-domain'),
-                        'usc_list_content' => __('100 percent online — convenient', 'nm_theme'),
+                        'usc_info_list_content' => __('Bachelor’s degree transcripts and degree verification.', 'nm_theme'),
                     ]
                 ]
             ]
         );
+
+        $this->end_controls_section();
+
+        //Application Notice
+        $this->start_controls_section(
+            'usc_deadline',
+            [
+                'label' => __('Deadlines Notice', 'nm_theme'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+        $this->add_control('usc_dead_title', [
+            'label' => __('Application Information', 'nm_theme'),
+            'label_block' => true,
+            'type' => \Elementor\Controls_Manager::TEXT,
+            'default' => __('Deadlines title', 'nm_theme'),
+        ]);
+
+        $this->add_control('usc_dead_des', [
+            'label' => __('Deadlines Description', 'nm_theme'),
+            'label_block' => true,
+            'type' => \Elementor\Controls_Manager::WYSIWYG,
+            'default' => __('Admission decisions are normally released within two to four weeks of application submission.', 'nm_theme'),
+        ]);
+
+        $this->end_controls_section();
+
+
+        $this->start_controls_section(
+            'usc_apply_timeline',
+            [
+                'label' => __('Time Line', 'nm_theme'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
+
+        $this->add_control('usc_timeline', [
+            'label' => __('Timeline', 'nm_theme'),
+            'type' => \Elementor\Controls_Manager::WYSIWYG,
+            'default' => __('Admission decisions are normally released ', 'nm_theme'),
+        ]);
 
         $this->end_controls_section();
     }
@@ -147,84 +170,59 @@ class NM_USC_INFO extends Widget_Base
 
 ?>
 
-<!--Second section start-->
-<section class="section_second">
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="nm_app_info">
-                    <h2 class="nm_font_mont">Application Information</h2>
-                    <p class="nm_font_mont">We highly recommend that you only submit one application to the degree
-                        of most interest to you. We would be happy to consider you for one of our other degrees.
-                        <br /><br />
+        <!--Second section start-->
+        <section class="section_second">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="nm_app_info">
+                            <h2 class="nm_font_mont"><?php echo $settings['usc_info_title']; ?></h2>
+                            <p class="nm_font_mont"><?php echo $settings['usc_info_des']; ?></p>
+                        </div>
 
-                        Once you have submitted your application to your first-choice program, please email
-                        gipadmissions@law.usc.edu.
-                    </p>
-                </div>
+                        <div class="nm_app_des">
+                            <h4 class="nm_font_mont"><?php echo $settings['usc_info_list_title']; ?></h4>
 
-                <div class="nm_app_des">
-                    <h4 class="nm_font_mont">Among the required information & documents you will submit are:</h4>
+                            <table class="nm_font_mont">
+                                <?php if ($settings['usc_info_list']) :
+                                    foreach ($settings['usc_info_list'] as $item) : ?>
+                                        <tr>
+                                            <td><img src="<?php echo NM_DIR_URI ?>/assets/img/list_star.png" alt="List Style" /></td>
+                                            <td><?php echo $item['usc_info_list_content']; ?></td>
+                                        </tr>
 
-                    <table class="nm_font_mont">
-                        <tr>
-                            <td><img src="<?php echo NM_DIR_URI ?>/assets/img/list_star.png" alt="List Style" /></td>
-                            <td>Bachelor’s degree transcripts and degree verification</td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo NM_DIR_URI ?>/assets/img/list_star.png" alt="List Style" /></td>
-                            <td>Personal statement — two to three pages that describe your personal, academic and
-                                professional background and your reasons for interest</td>
-                        </tr>
-                        <tr>
-                            <td><img src="<?php echo NM_DIR_URI ?>/assets/img/list_star.png" alt="List Style" /></td>
-                            <td>Résumé or curriculum vitae</td>
-                        </tr>
-                    </table>
+                                    <?php
 
-                </div>
+                                    endforeach;
+                                else :
+                                    ?>
+                                    <tr>
+                                        <td><img src="<?php echo NM_DIR_URI ?>/assets/img/list_star.png" alt="List Style" /></td>
+                                        <td>
+                                            <p>No List item available.</p>
+                                        </td>
+                                    </tr>
+                                <?php endif; ?>
+                            </table>
 
-            </div>
+                        </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="nm_dead_des">
-                    <h4 class="nm_font_mont">DEADLINES</h4>
-                    <p class="nm_font_mont">
-                        Admission decisions are normally released within two to four weeks of application
-                        submission. Admission decisions are sent by email. No admission decisions will be released
-                        by phone.
-                    </p>
-                </div>
+                    </div>
 
-                <div class="nm_dead_data">
-                    <table class="nm_font_mont">
-                        <tr>
-                            <td class="font_color_red">Priority</td>
-                            <td>Summer 2018</td>
-                            <td>Fall 2018</td>
-                        </tr>
-                        <tr>
-                            <td class="font_color_red">Application Deadline</td>
-                            <td>March 14, 2018</td>
-                            <td>July 11, 2018</td>
-                        </tr>
-                        <tr>
-                            <td class="font_color_red">Courses Start</td>
-                            <td>May 9, 2018</td>
-                            <td>September 5 2018</td>
-                        </tr>
-                        <tr>
-                            <td class="font_color_red">Courses End</td>
-                            <td>August 21, 2018</td>
-                            <td>December 18, 2018</td>
-                        </tr>
-                    </table>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="nm_dead_des">
+                            <h4 class="nm_font_mont"><?php echo $settings['usc_dead_title']; ?></h4>
+                            <p class="nm_font_mont"><?php echo $settings['usc_dead_des']; ?></p>
+                        </div>
+                        <div class="nm_dead_data">
+                            <?php echo $settings['usc_timeline']; ?>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!--Second section end-->
+        </section>
+        <!--Second section end-->
 
 <?php
 

@@ -65,3 +65,12 @@ require_once NM_DIR_PATH . '/inc/tgm-config.php';
 //     return false;
 // }
 
+add_filter('learn-press/override-templates', function () {
+   return true;
+});
+
+//Hide admin bar for subscriber
+add_filter( 'show_admin_bar' , 'usc_hide_adminbar_all');
+function usc_hide_adminbar_all($show_admin_bar) {
+    return ( current_user_can( 'administrator' ) ) ? $show_admin_bar : false;
+}

@@ -27,3 +27,25 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .nm-widget-social .wp-block-social-link-anchor{
     padding: 0px !important;
 }
+
+/* Lear press */
+.learn-press-breadcrumb {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    background: #ECB324;
+    padding: 0 15px !important;
+    color: #131313 !important;
+}
+
+.lp-content-area{
+    padding-top: 30px !important;
+}
+
+.learn-press-breadcrumb li a:hover{
+    color: #131313 !important;
+}
+
+.lp-modal-dialog .lp-modal-content .lp-modal-header {
+    background: #ECB324 !important;
+}

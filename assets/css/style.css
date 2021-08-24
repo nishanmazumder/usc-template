@@ -116,13 +116,29 @@ a:hover {
 	Header Section
 **********************/
 
-header {
+/* header {
 	background: url(img/main_bg.png) no-repeat;
+	background-position: center;
+	padding-top: 20px;
+	padding-bottom: 80px;
+} */
+
+header{
+	padding: 10px 0px;
+}
+
+.nm-header-front {
 	background-position: center;
 	padding-top: 20px;
 	padding-bottom: 80px;
 }
 
+/* .nm-header{} */
+
+.nm-header .nm_usc_logo img {
+	width: 130px;
+	border-radius: 0px;
+}
 .nm_usc_logo img {
 	width: 250px;
 	border-radius: 0px;
@@ -248,7 +264,7 @@ header {
 	z-index: 100;
 	top: 0;
 	left: 0;
-	background-color: #C90D2C;
+	background-color: #131313;
 	overflow: hidden;
 	transition: 0.5s;
 }
@@ -537,6 +553,7 @@ header {
 	border: 1px solid #ECB324;
 	transition: .7s;
 	display: inline-block;
+	margin-top: 20px;
 }
 
 .nm_course_view:hover {
@@ -550,7 +567,7 @@ header {
 /*Second section*/
 
 .section_second {
-	padding: 50px 0px;
+	padding: 50px 0px 10px;
 }
 
 .nm_app_info {
@@ -587,13 +604,18 @@ header {
 	margin-bottom: 20px;
 }
 
+.nm_app_des table tr{
+	vertical-align: top;
+}
+
 .nm_app_des img {
 	width: 13px;
-	margin-right: 10px;
+    margin-right: 15px;
+	margin-top: -3px;
 }
 
 .nm_app_des td {
-	line-height: 25px;
+	line-height: 28px;
 }
 
 .nm_nested_list {
@@ -660,7 +682,6 @@ header {
 
 
 .nm_app_contact {
-	background: #131313;
 	padding: 50px;
 	text-align: center;
 }

@@ -25,7 +25,7 @@ class NM_USC_COURSE extends Widget_Base
      */
     public function get_title()
     {
-        return "USC Course detaile";
+        return "USC Course Reasons";
     }
 
     /**

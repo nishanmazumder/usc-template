@@ -34,10 +34,21 @@ class Widget
         \Elementor\Plugin::instance()->widgets_manager
             ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_COURSE);
 
-            //Application Section
+        //Application Section
         require_once __DIR__ . '/widgets/class-el-info.php';
         \Elementor\Plugin::instance()->widgets_manager
             ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_INFO);
-    }
 
+        //Application Fee
+        require_once __DIR__ . '/widgets/class-el-application-fee.php';
+        \Elementor\Plugin::instance()->widgets_manager
+            ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_FEE);
+
+        //Course List
+        require_once __DIR__ . '/widgets/class-el-course-list.php';
+        \Elementor\Plugin::instance()->widgets_manager
+            ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_COURSE_LIST);
+
+
+    }
 }

@@ -75,6 +75,16 @@ function nm_post_content_limit($limit)
     echo implode(' ', $limit_content);
 }
 
+//Post Title Limit 
+function nm_post_title_limit($limit)
+{
+    $post_content = explode(' ', get_the_title());
+    $limit_content = array_slice($post_content, 0, $limit);
+
+    return implode(' ', $limit_content);
+}
+
+
 // Post Excerpt Limit
 function nm_post_excerpt_limit($content_count = 0)
 {

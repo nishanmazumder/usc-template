@@ -130,6 +130,14 @@ function nmbet_register_required_plugins()
 			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
 			'required'  => true,
 			'version'   => '5.4.2'
+		),
+
+		array(
+			'name'      => 'LearnPress',
+			'slug'      => 'learnpress',
+			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
+			'required'  => true,
+			'version'   => '4.1.2'
 		)
 
 	);

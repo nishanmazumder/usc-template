@@ -34,8 +34,11 @@
     if (function_exists('wp_body_open')) {
         wp_body_open();
     }
-    get_template_part('template-parts/header/site', 'header');
-
+    if (is_front_page()) {
+        get_template_part('template-parts/header/header-front');
+    } else {
+        get_template_part('template-parts/header/header');
+    }
     if (is_front_page()) {
         get_template_part('template-parts/header/site', 'banner');
     }
