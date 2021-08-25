@@ -22,7 +22,6 @@ class Widget
 
     protected function setup_hooks()
     {
-
         //Register Elementor Widgets
         add_action('init', [$this, 'nm_elementor_widgets_register']);
     }
@@ -48,7 +47,5 @@ class Widget
         require_once __DIR__ . '/widgets/class-el-course-list.php';
         \Elementor\Plugin::instance()->widgets_manager
             ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_COURSE_LIST);
-
-
     }
 }

@@ -19,8 +19,7 @@ class NM_THEME
         Sidebar::get_instance();
         Menus::get_instance();
         META_BOX::get_instance();
-        Widget::get_instance();
-        
+
         $this->setup_hooks();
     }
 
@@ -67,7 +66,7 @@ class NM_THEME
         //wp-block-styles
         add_theme_support('wp-block-styles');
 
-        add_theme_support( 'align-wide' );
+        add_theme_support('align-wide');
 
         // global $content_width;
         // if(!isset($content_width)){

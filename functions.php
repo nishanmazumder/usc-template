@@ -8,6 +8,10 @@
 /**
  * Theme URL
  */
+if (!defined('NM_SITE_URL')) {
+   define('NM_SITE_URL', esc_url(get_site_url()));
+}
+
 if (!defined('NM_DIR_PATH')) {
    define('NM_DIR_PATH', untrailingslashit(get_template_directory()));
 }
@@ -33,6 +37,14 @@ nm_theme_get_instance();
 function nm_theme_get_instance()
 {
    \NM_THEME\Classes\NM_THEME::get_instance();
+
+   if (function_exists('is_plugin_active')) {
+      if (!is_plugin_active('elementor/elementor.php')) {
+         return;
+      } else {
+         \NM_THEME\Classes\Widget::get_instance();
+      }
+   }
 }
 
 /**
@@ -50,27 +62,3 @@ require_once NM_DIR_PATH . '/inc/template-tags.php';
  */
 require_once NM_DIR_PATH . '/inc/tgm-activation.php';
 require_once NM_DIR_PATH . '/inc/tgm-config.php';
-
-/**
- * ACF
- */
-
-// if ( is_plugin_active('advanced-custom-fields') ) {
-//    // do something
-// }
-
-// Hide the ACF admin menu item.
-// add_filter('acf/settings/show_admin', 'my_acf_settings_show_admin');
-// function my_acf_settings_show_admin( $show_admin ) {
-//     return false;
-// }
-
-add_filter('learn-press/override-templates', function () {
-   return true;
-});
-
-//Hide admin bar for subscriber
-add_filter( 'show_admin_bar' , 'usc_hide_adminbar_all');
-function usc_hide_adminbar_all($show_admin_bar) {
-    return ( current_user_can( 'administrator' ) ) ? $show_admin_bar : false;
-}

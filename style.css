@@ -49,3 +49,31 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .lp-modal-dialog .lp-modal-content .lp-modal-header {
     background: #ECB324 !important;
 }
+
+.learn-press-form{
+    width: 40%;
+    margin: 50px auto;
+    border: 1px solid #131313;
+    padding: 30px 20px 10px;
+}
+
+.learn-press-form .nm_usc_form{
+    margin-top: 20px !important;
+    padding: 0px;
+    background: transparent;
+}
+
+.learn-press-form .nm_usc_sbt_btn{
+    padding: 10px 50px;
+}
+.error{
+    color: red !important;
+    text-align: center !important;  
+}
+.nm-lost-pw{
+    color: #ECB324;
+}
+/* 
+.learn-press-form label{
+    display: block;
+} */
