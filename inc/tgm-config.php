@@ -116,20 +116,28 @@ function nmbet_register_required_plugins()
 		// 	'version'   => '2.9.0'
 		// ),
 
-		array(
-			'name'      => 'Advanced Custom Fields',
-			'slug'      => 'advanced-custom-fields',
-			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
-			'required'  => true,
-			'version'   => '5.9.9'
-		),
+		// array(
+		// 	'name'      => 'Advanced Custom Fields',
+		// 	'slug'      => 'advanced-custom-fields',
+		// 	//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
+		// 	'required'  => true,
+		// 	'version'   => '5.9.9'
+		// ),
+
+		// array(
+		// 	'name'      => 'Contact Form 7',
+		// 	'slug'      => 'contact-form-7',
+		// 	//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
+		// 	'required'  => true,
+		// 	'version'   => '5.4.2'
+		// ),
 
 		array(
-			'name'      => 'Contact Form 7',
-			'slug'      => 'contact-form-7',
+			'name'      => 'WPForms',
+			'slug'      => 'wpforms-lite',
 			//'source'    => get_template_directory() . '/lib/tgm/plugins/cmb2.zip',
 			'required'  => true,
-			'version'   => '5.4.2'
+			'version'   => '1.6.9'
 		),
 
 		array(

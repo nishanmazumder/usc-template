@@ -128,7 +128,7 @@ class NM_USC_COURSE_LIST extends Widget_Base
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 text-right">
+                    <div class="col-md-12 text-right nm_course_view_sec">
                         <a href="<?php echo esc_url($settings['usc_course_page']); ?>" class="nm_course_view"><?php esc_html_e('View More Course', 'nm_theme'); ?><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>

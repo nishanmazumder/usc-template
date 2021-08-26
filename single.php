@@ -11,7 +11,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        
+
         <!-- Post -->
         <div class="col-md-8">
             <?php

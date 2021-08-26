@@ -63,8 +63,7 @@ a:hover {
 
 .nm_header_h1 {
 	font-size: 46px;
-	letter-spacing: -2px;
-	line-height: 40px;
+	line-height: 50px;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 }
@@ -131,6 +130,7 @@ header{
 	background-position: center;
 	padding-top: 20px;
 	padding-bottom: 80px;
+	background-repeat: no-repeat;
 }
 
 /* .nm-header{} */
@@ -567,13 +567,17 @@ header{
 	font-size: 20px;
 	padding: 10px 20px;
 	border: 1px solid #ECB324;
-	transition: .7s;
+	transition: .5s;
 	display: inline-block;
 	margin-top: 20px;
 }
 
 .nm_course_view:hover {
 	color: #ECB324;
+	transform: scale(1.1);
+}
+.nm_course_view i {
+	margin-left: 10px;
 }
 
 .nm_course_view:hover .nm_course_view i {
@@ -816,6 +820,10 @@ footer {
 	line-height: 60px;
 }
 
+.footer-text a{
+	color:  #ECB324;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -838,8 +846,16 @@ footer {
 		width: 100%;
 	}
 
+	.nm_usc_youtube iframe{
+		width: 100%;
+	}
+
 	.nm_usc_youtube img {
 		width: 500px;
+	}
+
+	.section_first{
+		padding-bottom: 0px;
 	}
 
 	.nm_usc_apply h3 {
@@ -861,10 +877,18 @@ footer {
 
 @media only screen and (max-width:780px) {
 	header {
-		background: url(img/main_bg.png) no-repeat;
-		background-position: top;
-		padding-top: 20px;
-		padding-bottom: 80px;
+		background-position: top !important;
+		/* padding-top: 20px !important;
+		padding-bottom: 80px !important; */
+	}
+
+	.nm_usc_nav i{
+		margin-right: 10px;
+	}
+
+	.nm_paragraph{
+		line-height: 30px;
+		font-size: 24px;
 	}
 
 	.nm_usc_headline {
@@ -1037,16 +1061,19 @@ footer {
 
 @media only screen and (max-width:490px) {
 	.nm_usc_nav i {
-		margin-top: -60px;
+		margin-top: -50px;
 	}
 
 	.nm_usc_form_sec {
 		padding: 0px;
-		margin-top: 50px;
+	}
+
+	.nm_usc_form_area h3{
+		font-size: 24px;
 	}
 
 	.nm_usc_main_form_btn {
-		right: 15px;
+		left: -25px;
 	}
 
 	.nm_usc_youtube img {
@@ -1085,12 +1112,30 @@ footer {
 		margin-left: -90px;
 	}
 
+	.nm_course {
+		margin-top: 80px;
+	}
+
+	.nm_course_view_sec{
+		text-align: center !important;
+	}
+
+	.section_second{
+		margin-top: 20px;
+	}
+
 	.nm_dead_des {
 		margin-left: 0px;
+		padding: 10px;
 	}
 
 	.nm_dead_data {
 		margin-left: 0px;
+		padding: 10px;
+	}
+
+	.nm_app_fee{
+		padding-right: 0px;
 	}
 
 	.nm_app_contact {

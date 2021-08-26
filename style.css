@@ -22,6 +22,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     margin: 0px auto !important;
 }
 
+.nm-page{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 .nm-widget-social {
     margin-bottom: 0px;
 }
@@ -32,6 +37,20 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .nm-widget-social .wp-block-social-link-anchor {
     padding: 0px !important;
+}
+
+.nm-widget-social .wp-social-link-facebook svg:hover{
+    color: #1778f2;
+}
+
+.nm-widget-social .wp-social-link-linkedin svg:hover{
+    color: #0d66c2;
+}
+.nm-widget-social .wp-social-link-twitter svg:hover{
+    color: #1da1f2;
+}
+.nm-widget-social .wp-social-link-youtube svg:hover{
+    color: red;
 }
 
 /**About**/
@@ -135,6 +154,50 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     font-size: 12px;
 }
 
+/* Contact */
+/* .nm_contact_us input{
+    width: 100% !important;
+} */
+
+/* .nm_contact_us .wpcf7-response-output{
+    color: #fff;
+    text-align: center;
+} */
+
+.nm_usc_contact_form label{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+.nm_usc_contact_form textarea{
+    width: 100% !important;
+}
+
+.nm_usc_contact_form .wpforms-required-label{
+    display: none !important;
+}
+
+.nm_usc_submit_contact{
+    border-radius: 0px !important;
+	padding: 15px !important;
+	color: rgb(255, 255, 255) !important;
+	background: #C90D2C !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
+	line-height: 18px !important;
+	cursor: pointer !important;
+	transition: .7s !important;
+	font-family: 'Montserrat', sans-serif !important;
+    display: block !important;
+    width: 100% !important;
+}
+.nm_usc_contact_form .wpforms-error{
+    font-size: 14px !important;
+    color: #C90D2C !important;
+}
+
 @media only screen and (max-width:780px) {
     .course-summary-sidebar__inner {
         position: inherit !important;
@@ -147,7 +210,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media only screen and (max-width:430px) {
     .learn-press-courses-header {
-        padding-bottom: 30px;
+        padding-bottom: 30px !important;
+    }
+
+    .learn-press-checkout-comment{
+        padding: 12px !important;
     }
 
     .learn-press-form {

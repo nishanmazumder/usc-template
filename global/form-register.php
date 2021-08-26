@@ -19,7 +19,7 @@ defined('ABSPATH') || exit();
 
 	<?php do_action('learn-press/before-form-register'); ?>
 
-	<form class="nm_usc_form" name="learn-press-register" method="post" action="/profile">
+	<form class="nm_usc_form" name="learn-press-register" method="post" action="/usc-profile">
 		<?php do_action('learn-press/before-form-register-fields'); ?>
 		<div class="form-group">
 			<input class="form-control" id="reg_email" name="reg_email" type="text" placeholder="<?php esc_attr_e('Email', 'nm_theme'); ?>" autocomplete="email" value="<?php echo (!empty($_POST['reg_email'])) ? esc_attr(wp_unslash($_POST['reg_email'])) : ''; ?>">

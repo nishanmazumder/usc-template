@@ -23,8 +23,6 @@
                 _e('Sorry, no posts matched your criteria.', 'nm_theme');
             endif;
             ?>
-
-
         </div>
     </div>
 </div>
