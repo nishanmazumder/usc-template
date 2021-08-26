@@ -47,8 +47,10 @@ class Assets
 
     public function register_scripts()
     {
-        wp_enqueue_script('bootstrap-js', NM_DIR_URI . '/assets/js/bootstrap.min.js', array('jquery'), 'v5.0.1', true); //footer
+        wp_enqueue_script('bootstrap-js', NM_DIR_URI . '/assets/js/bootstrap.min.js', array('jquery'), 'v4.0.0', true); //footer
         wp_enqueue_script('owl-js', NM_DIR_URI . '/assets/js/owl.carousel.min.js', array('jquery'), 'v5.0.1', true); //footer
+        wp_enqueue_script('nmJqValidator', 'https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js', array('jquery'));
         wp_enqueue_script('main-js', NM_DIR_URI . '/assets/js/main.js', array('jquery'), filemtime(NM_DIR_PATH . '/assets/js/main.js'), true); //footer
+
     }
 }

@@ -13,22 +13,37 @@ Text Domain: nm_theme
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
-.nm-img-full{
+.nm-img-full {
     width: 100%;
     height: auto;
 }
 
-.nm-widget-social{
+.nm-btn{
+    margin: 0px auto !important;
+}
+
+.nm-widget-social {
     margin-bottom: 0px;
 }
-.nm-widget-social .wp-block-social-link{
+
+.nm-widget-social .wp-block-social-link {
     margin: 0px !important;
 }
-.nm-widget-social .wp-block-social-link-anchor{
+
+.nm-widget-social .wp-block-social-link-anchor {
     padding: 0px !important;
 }
 
+/**About**/
+.nm_about_faq i{
+    margin-top: 10px !important;
+}
 /* Lear press */
+.lp-content-wrap {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
 .learn-press-breadcrumb {
     width: 100% !important;
     max-width: 100% !important;
@@ -37,12 +52,19 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     padding: 0 15px !important;
     color: #131313 !important;
 }
+.lp-user-profile .lp-content-area {
+    padding-top: 0px !important;
+}
 
-.lp-content-area{
+.lp-content-area {
     padding-top: 30px !important;
 }
 
-.learn-press-breadcrumb li a:hover{
+.course-detail-info {
+    margin-bottom: 20px !important;
+}
+
+.learn-press-breadcrumb li a:hover {
     color: #131313 !important;
 }
 
@@ -50,30 +72,85 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     background: #ECB324 !important;
 }
 
-.learn-press-form{
+#checkout-account-register,
+#checkout-account-login {
+    /* border:1px solid #ECB324; */
+    padding: 30px 20px;
+}
+
+#checkout-account-register label,
+#checkout-account-login label {
+    display: block;
+}
+
+#checkout-account-register input,
+#checkout-account-login input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.learn-press-form {
     width: 40%;
     margin: 50px auto;
     border: 1px solid #131313;
     padding: 30px 20px 10px;
 }
 
-.learn-press-form .nm_usc_form{
+.learn-press-form .nm_usc_form {
     margin-top: 20px !important;
     padding: 0px;
     background: transparent;
 }
 
-.learn-press-form .nm_usc_sbt_btn{
+.learn-press-form .nm_usc_sbt_btn {
     padding: 10px 50px;
 }
-.error{
+
+.error {
     color: red !important;
-    text-align: center !important;  
+    text-align: center !important;
 }
-.nm-lost-pw{
+
+.nm-lost-pw {
     color: #ECB324;
 }
+
+#guest_email {
+    padding: 5px;
+}
+
+.order-comments {
+    padding: 5px;
+}
+
 /* 
 .learn-press-form label{
     display: block;
 } */
+
+/* Apply form */
+.nm_usc_form .error{
+    font-size: 12px;
+}
+
+@media only screen and (max-width:780px) {
+    .course-summary-sidebar__inner {
+        position: inherit !important;
+        top: 0px !important;
+    }
+    #learn-press-course .course-summary-sidebar .course-sidebar-preview .media-preview img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .learn-press-courses-header {
+        padding-bottom: 30px;
+    }
+
+    .learn-press-form {
+        width: 100% !important;
+    }
+}

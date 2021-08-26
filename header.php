@@ -39,6 +39,4 @@
     } else {
         get_template_part('template-parts/header/header');
     }
-    if (is_front_page()) {
-        get_template_part('template-parts/header/site', 'banner');
-    }
+   

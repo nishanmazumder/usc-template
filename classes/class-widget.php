@@ -28,6 +28,11 @@ class Widget
 
     public function nm_elementor_widgets_register()
     {
+        //Banner Section
+        require_once __DIR__ . '/widgets/class-el-banner.php';
+        \Elementor\Plugin::instance()->widgets_manager
+            ->register_widget_type(new \NM_THEME\Classes\Widget\NM_USC_BANNER);
+
         //Video Section
         require_once __DIR__ . '/widgets/class-el-course.php';
         \Elementor\Plugin::instance()->widgets_manager

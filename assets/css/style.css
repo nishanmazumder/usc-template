@@ -191,7 +191,7 @@ header{
 }
 
 .nm_usc_form .form-check-input {
-	height: 20px;
+	margin-top: 7px;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -207,9 +207,9 @@ header{
 	background-color: green;
 }
 
-.nm_usc_form .form-check {
+/* .nm_usc_form .form-check {
 	padding-left: 0px;
-}
+} */
 
 .usc_zip {
 	margin-left: 10px;
@@ -271,25 +271,25 @@ header{
 
 .nm-overlay-content {
 	position: relative;
-	top: 25%;
+	top: 15%;
 	width: 100%;
 	text-align: center;
 	margin-top: 30px;
 }
 
-.nm-overlay a {
+.nm-overlay-content a {
 	padding: 8px;
 	text-decoration: none;
 	font-size: 36px;
-	color: #fff;
+	color: #ECB324;
 	display: block;
 	transition: 0.3s;
 	font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.nm-overlay a:hover,
-.nm-overlay a:focus {
-	color: #f1f1f1;
+.nm-overlay-content a:hover,
+.nm-overlay-content a:focus {
+	color: #ecd7a2;
 }
 
 .nm-overlay .closebtn {
@@ -297,11 +297,27 @@ header{
 	top: 20px;
 	right: 45px;
 	font-size: 60px;
+	color: #ECB324;
 }
 
-.nm-overlay a:hover {
+.nm-overlay-content a:hover {
 	transform: scale(1.2);
 }
+
+.nm_user_navi{
+	color: #ecd7a2;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+
+.nm_user_navi a{
+	color: #ECB324;
+}
+
+.nm_user_navi a:hover{
+	color: #ecd7a2;
+}
+
 
 @media screen and (max-height: 450px) {
 	.nm-overlay {
