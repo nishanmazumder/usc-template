@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 404 Page
+ * Page 404
  * 
  * @package NM_THEME
  */
@@ -9,35 +9,16 @@
 
 <?php get_header(); ?>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Header</h1>
-            </div>
+<?php get_template_part('template-parts/header/site', 'title'); ?>
+
+<div class="container nm-page">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1 class="text-danger">404</h1>
+            <h3>Page Not Found</h3>
+            <a href="<?php echo home_url(); ?>">Go to Home!</a>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>main</h1>
-                <?php 
-                
-                // if ( have_posts() ) : 
-                //     while ( have_posts() ) : the_post(); 
-                //     the_title();
-                //     the_content();
-                //     endwhile; 
-                // endif; 
-
-
-
-
-
-                
-                ?>
-            </div>
-        </div>
-    </div>
+</div>
 
 <?php get_footer(); ?>
