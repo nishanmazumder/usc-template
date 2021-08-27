@@ -94,6 +94,9 @@ class NM_USC_COURSE_LIST extends Widget_Base
                         ];
 
                         $query = new WP_Query($args);
+                        
+                        // echo '<pre>'; 
+                        // print_r($query);
 
                         if ($query->have_posts()) :
                             while ($query->have_posts()) : $query->the_post(); ?>
@@ -110,7 +113,7 @@ class NM_USC_COURSE_LIST extends Widget_Base
                                             <div class="nm_course_data_overlay">
                                                 <h3><?php esc_html(the_title()); ?></h3>
                                                 <span>Price : <i class="fas fa-dollar-sign"></i> <?php echo get_post_meta(get_the_ID(),'_lp_price', true); ?> / <?php echo get_post_meta(get_the_ID(),'_lp_duration', true); ?></span>
-                                                <p><?php esc_html(nm_post_content_limit(10)); ?></p>
+                                                <p><?php nm_post_excerpt_limit(100); ?></p>
                                                 <span href="<?php esc_url(the_permalink()); ?>" class="nm_course_readmore"><?php esc_html_e('Read More', 'nm_theme'); ?></span>
                                             </div>
                                         </div>

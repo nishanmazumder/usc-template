@@ -127,6 +127,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     padding: 10px 50px;
 }
 
+#learn-press-profile .wrapper-profile-header .lp-profile-right{
+    padding-top: 50px;
+}
+
 .error {
     color: red !important;
     text-align: center !important;
@@ -219,5 +223,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .learn-press-form {
         width: 100% !important;
+    }
+
+    #learn-press-profile .wrapper-profile-header .lp-profile-right{
+        padding: 25px ​400px 10px !important;
     }
 }

@@ -384,7 +384,7 @@ header{
 	margin-right: 20px;
 }
 
-.nm_usc_apply button {
+.nm_usc_apply a {
 	position: relative;
 	display: block;
 	z-index: 90;
@@ -392,6 +392,10 @@ header{
 	left: 45px;
 	padding-left: 60px;
 	padding-right: 60px;
+}
+
+.nm_usc_apply a:hover {
+	color: #fff;
 }
 
 .nm_usc_reson {
@@ -439,7 +443,7 @@ header{
 /* Course area */
 .nm_course {
 	background: #131313;
-	padding: 60px 20px 40px;
+	padding: 80px 20px 50px;
 }
 
 .nm_course .item {
@@ -1060,7 +1064,14 @@ footer {
 }
 
 @media only screen and (max-width:490px) {
+	.nm_usc_logo img{
+	    width: 180px;
+	}
 	.nm_usc_nav i {
+		margin-top: -60px;
+	}
+
+	.nm-header .nm_usc_nav i {
 		margin-top: -50px;
 	}
 

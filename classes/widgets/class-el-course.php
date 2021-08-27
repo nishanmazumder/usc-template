@@ -77,6 +77,13 @@ class NM_USC_COURSE extends Widget_Base
             'default' => __('APPLY ONLINE', 'nm_theme'),
         ]);
 
+        $this->add_control('usc_apply_btn_url', [
+            'label' => __('Button Link', 'nm_theme'),
+            'type' => \Elementor\Controls_Manager::TEXT,
+            'input_type' => 'url',
+            'default' => __('#', 'nm_theme'),
+        ]);
+
         $this->add_control('usc_apply_btn_color', [
             'label' => __('Apply Button Color', 'nm_theme'),
             'type' => \Elementor\Controls_Manager::COLOR,
@@ -177,7 +184,7 @@ class NM_USC_COURSE extends Widget_Base
 
                         <div class="nm_usc_apply">
                             <h3 class="nm_font_mont"><img src="<?php echo NM_DIR_URI ?>/assets/img/phone_icon2.png" alt="" />(213) 821-5916</h3>
-                            <button class="btn nm_usc_sbt_btn" style="background: <?php echo $settings['usc_apply_btn_color']; ?>;"><?php echo $settings['usc_apply_btn']; ?></button>
+                            <a href="<?php echo $settings['usc_apply_btn_url']; ?>" class="btn nm_usc_sbt_btn" style="background: <?php echo $settings['usc_apply_btn_color']; ?>;"><?php echo $settings['usc_apply_btn']; ?></a>
                         </div>
 
 

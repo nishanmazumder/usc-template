@@ -159,7 +159,7 @@ class NM_USC_FEE extends Widget_Base
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="nm_app_contact" style="background: <?php echo $settings['usc_apply_block_bg']; ?>;">
                             <h3 class="nm_font_mont"><img src="<?php echo NM_DIR_URI ?>/assets/img/phone_icon.png" alt="" /><?php echo $settings['usc_phone']; ?></h3>
-                            <a class="btn nm_usc_sbt_btn" style="color: <?php echo $settings['usc_apply_btn_color']; ?>; background: <?php echo $settings['usc_apply_btn_bg']; ?>;">
+                            <a href="<?php echo $settings['usc_apply_btn_url']; ?>" class="btn nm_usc_sbt_btn" style="color: <?php echo $settings['usc_apply_btn_color']; ?>; background: <?php echo $settings['usc_apply_btn_bg']; ?>;">
                                 <?php echo $settings['usc_apply_btn']; ?>
                             </a>
                         </div>
