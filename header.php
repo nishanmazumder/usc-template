@@ -18,9 +18,9 @@
 
     <!--Change Title and Meta tags-->
     <title>USC</title>
-    <meta name="description" content="USC | responsive app landing page, This is a premium product available exclusively here : https://USCapp.com">
+    <meta name="description" content="USC | University Site | Course Selling ">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="USC Template">
+    <meta name="author" content="Nishan M">
 
     <!--Google fonts |Montserrat|Oswald|IBM Plex Sans|Roboto Condensed|-->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,700|Montserrat:300,400,700|Oswald:300,400,700|Roboto+Condensed:400,700" rel="stylesheet">
