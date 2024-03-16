@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $('.owl-carousel').owlCarousel({
+    $('.nm_course .owl-carousel').owlCarousel({
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 4000,
