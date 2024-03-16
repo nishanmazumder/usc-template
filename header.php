@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Change Title and Meta tags-->
-    <title>USC</title>
+    <title><?php echo get_bloginfo('name'); ?></title>
     <meta name="description" content="USC | University Site | Course Selling ">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Nishan M">
@@ -29,7 +29,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
     <?php
     if (function_exists('wp_body_open')) {
         wp_body_open();
